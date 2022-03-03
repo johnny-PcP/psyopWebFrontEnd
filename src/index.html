@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>心戰大隊網站</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css"
+    />
+    <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+
+  <body>
+    <div class="w-full bg-white">
+      <!-- 導航欄T -->
+      <nav
+        class="bg-gray-100 border-gray-100 px-4 py-3 rounded-sm fixed z-10 w-full"
+      >
+        <div class="flex items-center">
+          <!-- 首頁右上圖片T -->
+          <a href="#" class="flex items-center">
+            <svg
+              class="w-8 h-10 text-red-600 bg-blue-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+              <path
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+              ></path>
+            </svg>
+            <span
+              class="self-center text-2xl whitespace-nowrap ml-2 text-gray-900"
+              >國防部心理作戰大隊</span
+            >
+          </a>
+          <!-- 首頁右上圖片B -->
+          <!-- 點選菜單T -->
+          <div class="items-center flex w-auto ml-3">
+            <ul
+              class="flex flex-row mt-0 text-sm font-medium space-x-3 text-gray-500"
+            >
+              <li>
+                <button
+                  id="dropdownButton1"
+                  data-dropdown-toggle="dropdown1"
+                  class="py-2 px-1 hover:bg-gray-50 focus:bg-gray-50 font-medium rounded-lg text-sm text-center inline-flex items-center"
+                  type="button"
+                >
+                  大隊簡介
+                  <svg
+                    class="ml-1 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+
+                <div
+                  id="dropdown1"
+                  class="hidden z-10 w-56 text-base list-none bg-white rounded divide-y border-solid shadow-inner"
+                >
+                  <ul class="py-1" aria-labelledby="dropdownButton1">
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-4 text-sm hover:bg-blue-500 hover:text-gray-100"
+                        >隊徽/隊歌</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-4 text-sm hover:bg-blue-500 hover:text-gray-100"
+                        >大隊長</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-4 text-sm hover:bg-blue-500 hover:text-gray-100"
+                        >隊史</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-4 text-sm hover:bg-blue-500 hover:text-gray-100"
+                        >組織架構</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button
+                  id="dropdownButton2"
+                  data-dropdown-toggle="dropdown2"
+                  class="py-2 px-1 hover:bg-gray-50 focus:bg-gray-50 font-medium rounded-lg text-sm text-center inline-flex items-center"
+                  type="button"
+                >
+                  中隊介紹
+                  <svg
+                    class="ml-1 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+
+                <div
+                  id="dropdown2"
+                  class="hidden z-10 w-56 text-base list-none bg-white rounded divide-y border-solid shadow-inner"
+                >
+                  <ul class="py-1" aria-labelledby="dropdownButton2">
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-4 text-sm hover:bg-blue-500 hover:text-gray-100"
+                        >隊徽/隊歌</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-4 text-sm hover:bg-blue-500 hover:text-gray-100"
+                        >大隊長</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-4 text-sm hover:bg-blue-500 hover:text-gray-100"
+                        >隊史</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-4 text-sm hover:bg-blue-500 hover:text-gray-100"
+                        >組織架構</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button
+                  id="dropdownButton3"
+                  data-dropdown-toggle="dropdown3"
+                  class="py-2 px-1 hover:bg-gray-50 focus:bg-gray-50 font-medium rounded-lg text-sm text-center inline-flex items-center"
+                  type="button"
+                >
+                  最新消息
+                  <svg
+                    class="ml-1 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+
+                <div
+                  id="dropdown3"
+                  class="hidden z-10 w-48 text-base list-none bg-white rounded divide-y border-solid shadow-inner"
+                >
+                  <ul class="py-1" aria-labelledby="dropdownButton3">
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-4 text-sm hover:bg-blue-500 hover:text-gray-100"
+                        >隊徽/隊歌</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-4 text-sm hover:bg-blue-500 hover:text-gray-100"
+                        >大隊長</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-4 text-sm hover:bg-blue-500 hover:text-gray-100"
+                        >隊史</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block py-2 px-4 text-sm hover:bg-blue-500 hover:text-gray-100"
+                        >組織架構</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-1 hover:bg-gray-50"
+                  >招募專區</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-1 hover:bg-gray-50"
+                  >相簿紀實</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-1 hover:bg-gray-50"
+                  >下載專區</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-1 hover:bg-gray-50"
+                  >網網相連</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- 點選菜單B -->
+          <!-- 其他按鈕T -->
+          <div class="flex items-center hover:cursor-pointer ml-auto">
+            <ul
+              class="flex flex-row mt-0 text-sm font-medium space-x-3 text-black"
+            >
+              <li>
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"
+                  ></path>
+                </svg>
+              </li>
+              <li>
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 10l7-7m0 0l7 7m-7-7v18"
+                  ></path>
+                </svg>
+              </li>
+              <li>
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  ></path>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <!-- 其他按鈕B -->
+          <!-- 搜尋欄位T -->
+          <div class="relative mx-8">
+            <div
+              class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-5 h-5 text-black"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="email-adress-icon"
+              class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </div>
+          <!-- 搜尋欄位B -->
+          <!-- 登入按鈕T -->
+          <div>
+            <button
+              id="dropdownSmallButton"
+              data-dropdown-toggle="dropdownSmall"
+              class="gap-2 py-2 px-1 hover:bg-gray-50 focus:bg-gray-50 rounded-lg text-sm text-center flex items-center text-gray-500"
+              type="button"
+            >
+              <svg
+                class="w-6 h-6 text-black"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                ></path>
+              </svg>
+              Login/Register
+            </button>
+
+            <!-- Dropdown menu -->
+            <div
+              id="dropdownSmall"
+              class="hidden z-10 w-56 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+            >
+              <div class="py-2 px-4 text-gray-900">
+                <span class="block text-sm">陳元鼎</span>
+                <span class="block text-sm font-medium truncate"
+                  >Roger13@webmail.com</span
+                >
+              </div>
+              <ul
+                class="py-3 text-gray-500"
+                aria-labelledby="dropdownSmallButton"
+              >
+                <li class="flex items-center ml-5">
+                  <svg
+                    class="w-6 h-6 text-black"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="#"
+                    class="py-2 px-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    個人資料</a
+                  >
+                </li>
+                <li class="flex items-center ml-5">
+                  <svg
+                    class="w-6 h-6 text-black"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="#"
+                    class="py-2 px-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >修改密碼</a
+                  >
+                </li>
+                <li class="flex items-center ml-5">
+                  <svg
+                    class="w-6 h-6 text-black"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="#"
+                    class="py-2 px-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >簽收區</a
+                  >
+                </li>
+                <li class="flex items-center ml-5">
+                  <svg
+                    class="w-6 h-6 text-black"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="#"
+                    class="py-2 px-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >收藏區</a
+                  >
+                </li>
+                <li class="flex items-center ml-5">
+                  <svg
+                    class="w-6 h-6 text-black"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                    ></path>
+                  </svg>
+                  <a
+                    href="#"
+                    class="py-2 px-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    登出</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 登入按鈕B -->
+        </div>
+      </nav>
+      <!-- 導航欄B -->
+
+      <!-- 輪播照片T -->
+      <div id="default-carousel" data-carousel="static" class="relative pt-16">
+        <!-- data-carousel="slide" 自動輪播-->
+        <!-- data-carousel="static" 不自動輪播-->
+        <div
+          style="min-height: 550px"
+          class="overflow-hidden relative rounded-sm"
+        >
+          <div
+            class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0"
+            data-carousel-item="active"
+          >
+            <img
+              src="https://picsum.photos/1600/500/?random=1"
+              class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 bg-contain"
+              alt="..."
+            />
+            <a
+              href="#"
+              class="flex flex-col absolute bottom-1/4 right-1/2 translate-x-1/2 w-full group"
+            >
+              <div
+                class="text-center text-2xl text-white text-shadow group-hover:underline"
+              >
+                新式野戰喊話車　強化心理作戰能力
+              </div>
+              <div
+                class="text-center text-lg text-white text-shadow group-hover:underline"
+              >
+                現代戰爭型態變化迅速，為能與時俱進並提升心戰裝備能量，在籌獲新式「野戰喊話車」後，能符合科技發展及心戰任務需求
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full"
+            data-carousel-item=""
+          >
+            <img
+              src="https://picsum.photos/1600/550/?random=2"
+              class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+            <a
+              href="#"
+              class="flex flex-col absolute bottom-1/4 right-1/2 translate-x-1/2 w-full group"
+            >
+              <div
+                class="text-center text-2xl text-white text-shadow group-hover:underline"
+              >
+                新式野戰喊話車　強化心理作戰能力
+              </div>
+              <div
+                class="text-center text-lg text-white text-shadow group-hover:underline"
+              >
+                現代戰爭型態變化迅速，為能與時俱進並提升心戰裝備能量，在籌獲新式「野戰喊話車」後，能符合科技發展及心戰任務需求
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
+            data-carousel-item=""
+          >
+            <img
+              src="https://picsum.photos/1600/550/?random=3"
+              class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+            <a
+              href="#"
+              class="flex flex-col absolute bottom-1/4 right-1/2 translate-x-1/2 w-full group"
+            >
+              <div
+                class="text-center text-2xl text-white text-shadow group-hover:underline"
+              >
+                新式野戰喊話車　強化心理作戰能力
+              </div>
+              <div
+                class="text-center text-lg text-white text-shadow group-hover:underline"
+              >
+                現代戰爭型態變化迅速，為能與時俱進並提升心戰裝備能量，在籌獲新式「野戰喊話車」後，能符合科技發展及心戰任務需求
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
+            data-carousel-item=""
+          >
+            <img
+              src="https://picsum.photos/1600/550/?random=4"
+              class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+            <a
+              href="#"
+              class="flex flex-col absolute bottom-1/4 right-1/2 translate-x-1/2 w-full group"
+            >
+              <div
+                class="text-center text-2xl text-white text-shadow group-hover:underline"
+              >
+                新式野戰喊話車　強化心理作戰能力
+              </div>
+              <div
+                class="text-center text-lg text-white text-shadow group-hover:underline"
+              >
+                現代戰爭型態變化迅速，為能與時俱進並提升心戰裝備能量，在籌獲新式「野戰喊話車」後，能符合科技發展及心戰任務需求
+              </div>
+            </a>
+          </div>
+          <div
+            class="flex absolute bottom-9 left-1/2 space-x-3 -translate-x-1/2"
+          >
+            <button
+              type="button"
+              class="w-7 h-1 rounded-full bg-white dark:bg-gray-800"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-7 h-1 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-7 h-1 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-7 h-1 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+          </div>
+
+          <button
+            type="button"
+            class="flex absolute top-0 left-0 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-prev=""
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="hidden">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="flex absolute top-0 right-0 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-next=""
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span class="hidden">Next</span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <!-- 輪播照片B -->
+      <!-- 五個中隊橫式捲軸T -->
+      <div class="flex basis-full overflow-x-auto">
+        <a
+          href="#"
+          style="
+            background-image: url(https://picsum.photos/600/400/?random=10);
+          "
+          class="flex-none fiveBoxSize bg-cover shadow-inner flex justify-end items-end"
+        >
+          <div class="text-shadow text-white text-3xl mr-6 mb-6">第一中隊</div>
+        </a>
+        <a
+          href="#"
+          style="
+            background-image: url(https://picsum.photos/600/400/?random=11);
+          "
+          class="flex-none fiveBoxSize bg-cover shadow-inner flex justify-end items-end"
+        >
+          <div class="text-shadow text-white text-3xl mr-6 mb-6">第二中隊</div>
+        </a>
+        <a
+          href="#"
+          style="
+            background-image: url(https://picsum.photos/600/400/?random=12);
+          "
+          class="flex-none fiveBoxSize bg-cover shadow-inner flex justify-end items-end"
+        >
+          <div class="text-shadow text-white text-3xl mr-6 mb-6">第三中隊</div>
+        </a>
+        <a
+          href="#"
+          style="
+            background-image: url(https://picsum.photos/600/400/?random=13);
+          "
+          class="flex-none fiveBoxSize bg-cover shadow-inner flex justify-end items-end"
+        >
+          <div class="text-shadow text-white text-3xl mr-6 mb-6">第四中隊</div>
+        </a>
+        <a
+          href="#"
+          style="
+            background-image: url(https://picsum.photos/600/400/?random=14);
+          "
+          class="flex-none fiveBoxSize bg-cover shadow-inner flex justify-end items-end"
+        >
+          <div class="text-shadow text-white text-3xl mr-6 mb-6">第五中隊</div>
+        </a>
+      </div>
+      <!-- 五個中隊橫式捲軸B -->
+      <!-- 五心T -->
+      <div class="grid grid-cols-3 grid-rows-3 mt-16">
+        <!-- 1 -->
+        <div class="flex justify-end items-end">
+          <div class="-translate-x-10">
+            <div
+              style="height: 166px; width: 280px"
+              class="bg-slate-200 rounded-md shadow-lg flex justify-center items-center"
+            >
+              <div class="text-center">第一中隊圖像 <br />(網路傳散)</div>
+            </div>
+            <div class="text-xl text-center mt-3">攻心</div>
+            <div class="text-center mt-2">---副標題---</div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="flex justify-center items-end">
+          <div
+            style="height: 266px; width: 450px"
+            class="bg-green-200 rounded-xl flex justify-center items-center shadow-xl"
+          >
+            <div class="text-center">大隊圖像 <br />(指揮策畫)</div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="flex justify-start items-end">
+          <div class="translate-x-10">
+            <div
+              style="height: 166px; width: 280px"
+              class="bg-slate-200 rounded-md shadow-lg flex justify-center items-center"
+            >
+              <div class="text-center">第三中隊圖像 <br />(前線支援)</div>
+            </div>
+            <div class="text-xl text-center mt-3">固心</div>
+            <div class="text-center mt-2">---副標題---</div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="flex justify-end items-end">
+          <div class="translate-x-10">
+            <div
+              style="height: 166px; width: 280px"
+              class="bg-slate-200 rounded-md shadow-lg flex justify-center items-center"
+            >
+              <div class="text-center">第二中隊圖像 <br />(情報蒐集)</div>
+            </div>
+            <div class="text-xl text-center mt-3">知心</div>
+            <div class="text-center mt-2">---副標題---</div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="flex justify-center">
+          <div style="" class="w-2/3">
+            <div class="text-3xl text-center my-3 font-bold">
+              用兵之術 攻心為上
+            </div>
+            <div class="text-xl text-center border-t-2 border-black pt-3">
+              利用對抗環境中的心理變化規律，通過信息傳遞瓦解敵方士氣，或削弱抵抗意志，使其放棄抵抗、逃避戰鬥乃至繳械投降上
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="flex justify-start items-end">
+          <div class="-translate-x-10">
+            <div
+              style="height: 166px; width: 280px"
+              class="bg-slate-200 rounded-md shadow-lg flex justify-center items-center"
+            >
+              <div class="text-center">第四中隊圖像 <br />(團結民心)</div>
+            </div>
+            <div class="text-xl text-center mt-3">悅心</div>
+            <div class="text-center mt-2">---副標題---</div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class=""></div>
+        <!-- 8 -->
+        <div class="flex justify-center items-start">
+          <div class="-translate-y-1/4">
+            <div
+              style="height: 166px; width: 280px"
+              class="bg-slate-200 rounded-md shadow-lg flex justify-center items-center"
+            >
+              <div class="text-center">第四中隊圖像 <br />(團結民心)</div>
+            </div>
+            <div class="text-xl text-center mt-3">勵心</div>
+            <div class="text-center mt-2">---副標題---</div>
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class=""></div>
+      </div>
+      <!-- 五心B -->
+      <!-- 各中隊按鈕手風琴T -->
+      <div
+        class="border-t-2 border-gray-300 w-9/12 mx-auto flex flex-col items-center"
+      >
+        <div
+          class="text-3xl font-bold w-64 text-center mt-1.5 pb-3 box-border border-b-2 border-black mb-8"
+        >
+          各中隊
+        </div>
+        <div class="grow shrink-0 w-full">
+          <div
+            id="accordion-collapse"
+            data-accordion="collapse"
+            data-active-classes="bg-blue-300 text-black"
+            data-inactive-classes="bg-gray-200 text-black"
+          >
+            <!-- 1 -->
+            <h2 id="accordion-collapse-heading-1" class="my-2">
+              <button
+                type="button"
+                class="flex justify-between items-center p-7 w-full font-medium text-left text-black rounded-xl hover:bg-blue-200 bg-blue-300"
+                data-accordion-target="#accordion-collapse-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-collapse-body-1"
+              >
+                <div class="ml-5 basis-6/12">
+                  <div class="text-2xl font-bold">一中隊</div>
+                  <div class="">First Squadron</div>
+                </div>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    任務
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Mission
+                  </div>
+                </a>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    裝備
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Equipments
+                  </div>
+                </a>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    紀實
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Albums
+                  </div>
+                </a>
+
+                <svg
+                  data-accordion-icon=""
+                  class="w-10 h-10 rotate-180 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-1"
+              aria-labelledby="accordion-collapse-heading-1"
+            >
+              <div class="p-5 bg-white border-none rounded-3xl">
+                <div
+                  style="height: 600px"
+                  class="grid grid-rows-2 grid-cols-12 gap-4"
+                >
+                  <!-- 任務區 -->
+                  <div class="w-full col-span-6 flex flex-col">
+                    <div class="grow h-40 flex">
+                      <div class="w-3/5 text-xl text-center py-3">任務：</div>
+                      <div class="grow text-xl py-3">
+                        任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...任務介紹...
+                      </div>
+                    </div>
+                    <div class="h-12 flex justify-end items-end">
+                      <a href="#" class="flex mr-3 text-blue-500">
+                        <svg
+                          class="w-5 h-5 mr-1"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        更多介紹
+                      </a>
+                    </div>
+                  </div>
+                  <!-- 照片牆 -->
+                  <div
+                    class="w-full col-span-6 row-span-2 grid grid-cols-2 grid-rows-3 gap-x-6 gap-y-3"
+                  >
+                    <div class="">
+                      <img
+                        class="bg-cover w-full h-full rounded-md shadow-inner"
+                        src="https://picsum.photos/300/200/?random=15"
+                      />
+                    </div>
+                    <div class="">
+                      <img
+                        class="bg-cover w-full h-full rounded-md shadow-inner"
+                        src="https://picsum.photos/300/200/?random=15"
+                      />
+                    </div>
+                    <div class="">
+                      <img
+                        class="bg-cover w-full h-full rounded-md shadow-inner"
+                        src="https://picsum.photos/300/200/?random=15"
+                      />
+                    </div>
+                    <div class="">
+                      <img
+                        class="bg-cover w-full h-full rounded-md shadow-inner"
+                        src="https://picsum.photos/300/200/?random=15"
+                      />
+                    </div>
+                    <div class="">
+                      <img
+                        class="bg-cover w-full h-full rounded-md shadow-inner"
+                        src="https://picsum.photos/300/200/?random=15"
+                      />
+                    </div>
+                    <div class="">
+                      <img
+                        class="bg-cover w-full h-full rounded-md shadow-inner"
+                        src="https://picsum.photos/300/200/?random=15"
+                      />
+                    </div>
+                  </div>
+                  <!-- 裝備照片區 -->
+                  <div
+                    class="w-full col-span-6 grid grid-cols-2 grid-rows-2 gap-4"
+                  >
+                    <!-- card1 -->
+                    <div class="bg-gray-50 grid grid-cols-6 grid-rows-5 gap-1">
+                      <div class="col-span-3 row-span-4">
+                        <img
+                          class="w-full h-full rounded-md shadow-inner"
+                          src="https://picsum.photos/100/100/?random=1"
+                        />
+                      </div>
+                      <div class="col-span-3 row-span-4 overflow-clip text-sm">
+                        超快速電腦，提供影片剪輯時轉檔及輸出工作，外殼具備防震、防水，執行任務時能提供穩定的作業速度。
+                      </div>
+                      <div class="col-span-3 text-center underline">
+                        高速繪圖電腦
+                      </div>
+                      <div class="flex">
+                        <svg
+                          class="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                          ></path>
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                          ></path>
+                        </svg>
+                        23
+                      </div>
+                      <div class="col-span-2">
+                        <div class="flex justify-end items-end">
+                          <a href="#" class="flex mr-2 text-blue-500 text-xs">
+                            <svg
+                              class="w-5 h-5 mr-1"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"
+                              ></path>
+                            </svg>
+                            更多介紹
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card2 -->
+                    <div class="bg-gray-50 grid grid-cols-6 grid-rows-5 gap-1">
+                      <div class="col-span-3 row-span-4">
+                        <img
+                          class="w-full h-full rounded-md shadow-inner"
+                          src="https://picsum.photos/100/100/?random=1"
+                        />
+                      </div>
+                      <div class="col-span-3 row-span-4 overflow-clip text-sm">
+                        超快速電腦，提供影片剪輯時轉檔及輸出工作，外殼具備防震、防水，執行任務時能提供穩定的作業速度。
+                      </div>
+                      <div class="col-span-3 text-center underline">
+                        高速繪圖電腦
+                      </div>
+                      <div class="flex">
+                        <svg
+                          class="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                          ></path>
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                          ></path>
+                        </svg>
+                        23
+                      </div>
+                      <div class="col-span-2">
+                        <div class="flex justify-end items-end">
+                          <a href="#" class="flex mr-2 text-blue-500 text-xs">
+                            <svg
+                              class="w-5 h-5 mr-1"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"
+                              ></path>
+                            </svg>
+                            更多介紹
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card3 -->
+                    <div class="bg-gray-50 grid grid-cols-6 grid-rows-5 gap-1">
+                      <div class="col-span-3 row-span-4">
+                        <img
+                          class="w-full h-full rounded-md shadow-inner"
+                          src="https://picsum.photos/100/100/?random=1"
+                        />
+                      </div>
+                      <div class="col-span-3 row-span-4 overflow-clip text-sm">
+                        超快速電腦，提供影片剪輯時轉檔及輸出工作，外殼具備防震、防水，執行任務時能提供穩定的作業速度。
+                      </div>
+                      <div class="col-span-3 text-center underline">
+                        高速繪圖電腦
+                      </div>
+                      <div class="flex">
+                        <svg
+                          class="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                          ></path>
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                          ></path>
+                        </svg>
+                        23
+                      </div>
+                      <div class="col-span-2">
+                        <div class="flex justify-end items-end">
+                          <a href="#" class="flex mr-2 text-blue-500 text-xs">
+                            <svg
+                              class="w-5 h-5 mr-1"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"
+                              ></path>
+                            </svg>
+                            更多介紹
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card4 -->
+                    <div class="bg-gray-50 grid grid-cols-6 grid-rows-5 gap-1">
+                      <div class="col-span-3 row-span-4">
+                        <img
+                          class="w-full h-full rounded-md shadow-inner"
+                          src="https://picsum.photos/100/100/?random=1"
+                        />
+                      </div>
+                      <div class="col-span-3 row-span-4 overflow-clip text-sm">
+                        超快速電腦，提供影片剪輯時轉檔及輸出工作，外殼具備防震、防水，執行任務時能提供穩定的作業速度。
+                      </div>
+                      <div class="col-span-3 text-center underline">
+                        高速繪圖電腦
+                      </div>
+                      <div class="flex">
+                        <svg
+                          class="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                          ></path>
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                          ></path>
+                        </svg>
+                        23
+                      </div>
+                      <div class="col-span-2">
+                        <div class="flex justify-end items-end">
+                          <a href="#" class="flex mr-2 text-blue-500 text-xs">
+                            <svg
+                              class="w-5 h-5 mr-1"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"
+                              ></path>
+                            </svg>
+                            更多介紹
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <h2 id="accordion-collapse-heading-2" class="my-2">
+              <button
+                type="button"
+                class="flex justify-between items-center p-5 w-full font-medium text-left text-black rounded-xl hover:bg-blue-300 bg-gray-200"
+                data-accordion-target="#accordion-collapse-body-2"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-2"
+              >
+                <div class="ml-5 basis-6/12">
+                  <div class="text-2xl font-bold">二中隊</div>
+                  <div class="">Second Squadron</div>
+                </div>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    任務
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Mission
+                  </div>
+                </a>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    裝備
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Equipments
+                  </div>
+                </a>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    紀實
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Albums
+                  </div>
+                </a>
+
+                <svg
+                  data-accordion-icon=""
+                  class="w-10 h-10 rotate-180 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-2"
+              class="hidden"
+              aria-labelledby="accordion-collapse-heading-2"
+            >
+              <div class="p-5">
+                <p class="mb-2 text-black font-extrabold text-3xl text-center">
+                  同上內容
+                </p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <h2 id="accordion-collapse-heading-3" class="my-2">
+              <button
+                type="button"
+                class="flex justify-between items-center p-5 w-full font-medium text-left text-black rounded-xl hover:bg-blue-300 bg-gray-200"
+                data-accordion-target="#accordion-collapse-body-3"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-3"
+              >
+                <div class="ml-5 basis-6/12">
+                  <div class="text-2xl font-bold">三中隊</div>
+                  <div class="">Third Squadron</div>
+                </div>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    任務
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Mission
+                  </div>
+                </a>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    裝備
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Equipments
+                  </div>
+                </a>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    紀實
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Albums
+                  </div>
+                </a>
+
+                <svg
+                  data-accordion-icon=""
+                  class="w-10 h-10 rotate-180 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-3"
+              class="hidden"
+              aria-labelledby="accordion-collapse-heading-3"
+            >
+              <div class="p-5">
+                <p class="mb-2 text-black font-extrabold text-3xl text-center">
+                  同上內容
+                </p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <h2 id="accordion-collapse-heading-4" class="my-2">
+              <button
+                type="button"
+                class="flex justify-between items-center p-5 w-full font-medium text-left text-black rounded-xl hover:bg-blue-300 bg-gray-200"
+                data-accordion-target="#accordion-collapse-body-4"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-4"
+              >
+                <div class="ml-5 basis-6/12">
+                  <div class="text-2xl font-bold">四中隊</div>
+                  <div class="">Fourth Squadron</div>
+                </div>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    任務
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Mission
+                  </div>
+                </a>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    裝備
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Equipments
+                  </div>
+                </a>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    紀實
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Albums
+                  </div>
+                </a>
+
+                <svg
+                  data-accordion-icon=""
+                  class="w-10 h-10 rotate-180 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-4"
+              class="hidden"
+              aria-labelledby="accordion-collapse-heading-4"
+            >
+              <div class="p-5">
+                <p class="mb-2 text-black font-extrabold text-3xl text-center">
+                  同上內容
+                </p>
+              </div>
+            </div>
+            <!-- 5 -->
+            <h2 id="accordion-collapse-heading-5" class="my-2">
+              <button
+                type="button"
+                class="flex justify-between items-center p-5 w-full font-medium text-left text-black rounded-xl hover:bg-blue-300 bg-gray-200"
+                data-accordion-target="#accordion-collapse-body-5"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-5"
+              >
+                <div class="ml-5 basis-6/12">
+                  <div class="text-2xl font-bold">五中隊</div>
+                  <div class="">Fifth Squadron</div>
+                </div>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    任務
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Mission
+                  </div>
+                </a>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    裝備
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Equipments
+                  </div>
+                </a>
+                <a href="#" class="ml-5 group">
+                  <div
+                    class="font-normal text-xl text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    紀實
+                  </div>
+                  <div
+                    class="text-center group-hover:text-blue-500 group-hover:underline"
+                  >
+                    Albums
+                  </div>
+                </a>
+
+                <svg
+                  data-accordion-icon=""
+                  class="w-10 h-10 rotate-180 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-5"
+              class="hidden"
+              aria-labelledby="accordion-collapse-heading-5"
+            >
+              <div class="p-5">
+                <p class="mb-2 text-black font-extrabold text-3xl text-center">
+                  同上內容
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 各中隊按鈕手風琴B -->
+      <!-- 最新消息T -->
+      <div class="bg-gray-100 flex flex-col items-center">
+        <div
+          class="text-3xl font-bold w-56 text-center pb-3 box-border border-b-2 border-black mb-8 mt-32"
+        >
+          最新消息
+        </div>
+        <div class="w-full flex justify-center">
+          <!-- 右欄T -->
+          <div class="basis-3/12 flex justify-end mr-5 pb-20">
+            <div class="grid grid-cols-2 grid-rows-5 justify-items-center w-60">
+              <div class="col-span-2">
+                <button
+                  class="w-20 h-20 bg-gray-50 rounded-lg text-center flex focus:ring-2 focus:ring-blue-500 border-2 border-gray-500"
+                >
+                  <span class="mx-auto my-auto"> icon </span>
+                </button>
+                <div class="text-center block text-lg text-black">全部</div>
+              </div>
+              <div>
+                <button
+                  class="w-20 h-20 bg-gray-50 rounded-lg text-center flex focus:ring-2 focus:ring-blue-500 border-2 border-gray-500"
+                >
+                  <span class="mx-auto my-auto"> icon </span>
+                </button>
+                <div class="text-center block text-lg text-black">士督長</div>
+              </div>
+              <div>
+                <button
+                  class="w-20 h-20 bg-gray-50 rounded-lg text-center flex focus:ring-2 focus:ring-blue-500 border-2 border-gray-500"
+                >
+                  <span class="mx-auto my-auto"> icon </span>
+                </button>
+                <div class="text-center block text-lg text-black">人事</div>
+              </div>
+              <div>
+                <button
+                  class="w-20 h-20 bg-gray-50 rounded-lg text-center flex focus:ring-2 focus:ring-blue-500 border-2 border-gray-500"
+                >
+                  <span class="mx-auto my-auto"> icon </span>
+                </button>
+                <div class="text-center block text-lg text-black">情報</div>
+              </div>
+              <div>
+                <button
+                  class="w-20 h-20 bg-gray-50 rounded-lg text-center flex focus:ring-2 focus:ring-blue-500 border-2 border-gray-500"
+                >
+                  <span class="mx-auto my-auto"> icon </span>
+                </button>
+                <div class="text-center block text-lg text-black">作戰</div>
+              </div>
+              <div>
+                <button
+                  class="w-20 h-20 bg-gray-50 rounded-lg text-center flex focus:ring-2 focus:ring-blue-500 border-2 border-gray-500"
+                >
+                  <span class="mx-auto my-auto"> icon </span>
+                </button>
+                <div class="text-center block text-lg text-black">後勤</div>
+              </div>
+              <div>
+                <button
+                  class="w-20 h-20 bg-gray-50 rounded-lg text-center flex focus:ring-2 focus:ring-blue-500 border-2 border-gray-500"
+                >
+                  <span class="mx-auto my-auto"> icon </span>
+                </button>
+                <div class="text-center block text-lg text-black">通資</div>
+              </div>
+              <div>
+                <button
+                  class="w-20 h-20 bg-gray-50 rounded-lg text-center flex focus:ring-2 focus:ring-blue-500 border-2 border-gray-500"
+                >
+                  <span class="mx-auto my-auto"> icon </span>
+                </button>
+                <div class="text-center block text-lg text-black">保防</div>
+              </div>
+              <div>
+                <button
+                  class="w-20 h-20 bg-gray-50 rounded-lg text-center flex focus:ring-2 focus:ring-blue-500 border-2 border-gray-500"
+                >
+                  <span class="mx-auto my-auto"> icon </span>
+                </button>
+                <div class="text-center block text-lg text-black">監察</div>
+              </div>
+            </div>
+          </div>
+          <!-- 右欄B -->
+          <!-- 左欄T -->
+          <div class="basis-7/12 flex flex-col items-start pr-32 xl:pr-80">
+            <!-- 單則消息 -->
+            <div class="flex mb-6">
+              <div
+                class="self-center rounded-full bg-green-500 text-gray-50 w-20 h-20 shadow-lg flex flex-col items-center justify-center shrink-0 mx-4"
+              >
+                <div class="text-2xl">15號</div>
+                <div class="text-sm">星期二</div>
+              </div>
+              <div>
+                <h1 class="font-bold">
+                  這是標題這是標題這是標題這是標題這是標題
+                </h1>
+                <div class="text-gray-500 text-sm">
+                  這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）...
+                </div>
+                <div class="text-gray-500 text-sm">部門：人事、瀏覽：159次</div>
+              </div>
+            </div>
+            <!-- 單則消息 -->
+            <div class="flex mb-6">
+              <div
+                class="self-center rounded-full bg-green-500 text-gray-50 w-20 h-20 shadow-lg flex flex-col items-center justify-center shrink-0 mx-4"
+              >
+                <div class="text-2xl">15號</div>
+                <div class="text-sm">星期二</div>
+              </div>
+              <div>
+                <h1 class="font-bold">
+                  這是標題這是標題這是標題這是標題這是標題
+                </h1>
+                <div class="text-gray-500 text-sm">
+                  這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）...
+                </div>
+                <div class="text-gray-500 text-sm">部門：人事、瀏覽：159次</div>
+              </div>
+            </div>
+            <!-- 單則消息 -->
+            <div class="flex mb-6">
+              <div
+                class="self-center rounded-full bg-green-500 text-gray-50 w-20 h-20 shadow-lg flex flex-col items-center justify-center shrink-0 mx-4"
+              >
+                <div class="text-2xl">15號</div>
+                <div class="text-sm">星期二</div>
+              </div>
+              <div>
+                <h1 class="font-bold">
+                  這是標題這是標題這是標題這是標題這是標題
+                </h1>
+                <div class="text-gray-500 text-sm">
+                  這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）...
+                </div>
+                <div class="text-gray-500 text-sm">部門：人事、瀏覽：159次</div>
+              </div>
+            </div>
+            <!-- 單則消息 -->
+            <div class="flex mb-6">
+              <div
+                class="self-center rounded-full bg-green-500 text-gray-50 w-20 h-20 shadow-lg flex flex-col items-center justify-center shrink-0 mx-4"
+              >
+                <div class="text-2xl">15號</div>
+                <div class="text-sm">星期二</div>
+              </div>
+              <div>
+                <h1 class="font-bold">
+                  這是標題這是標題這是標題這是標題這是標題
+                </h1>
+                <div class="text-gray-500 text-sm">
+                  這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）...
+                </div>
+                <div class="text-gray-500 text-sm">部門：人事、瀏覽：159次</div>
+              </div>
+            </div>
+            <!-- 單則消息 -->
+            <div class="flex mb-6">
+              <div
+                class="self-center rounded-full bg-green-500 text-gray-50 w-20 h-20 shadow-lg flex flex-col items-center justify-center shrink-0 mx-4"
+              >
+                <div class="text-2xl">15號</div>
+                <div class="text-sm">星期二</div>
+              </div>
+              <div>
+                <h1 class="font-bold">
+                  這是標題這是標題這是標題這是標題這是標題
+                </h1>
+                <div class="text-gray-500 text-sm">
+                  這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）...
+                </div>
+                <div class="text-gray-500 text-sm">部門：人事、瀏覽：159次</div>
+              </div>
+            </div>
+            <!-- 單則消息 -->
+            <div class="flex mb-6">
+              <div
+                class="self-center rounded-full bg-green-500 text-gray-50 w-20 h-20 shadow-lg flex flex-col items-center justify-center shrink-0 mx-4"
+              >
+                <div class="text-2xl">15號</div>
+                <div class="text-sm">星期二</div>
+              </div>
+              <div>
+                <h1 class="font-bold">
+                  這是標題這是標題這是標題這是標題這是標題
+                </h1>
+                <div class="text-gray-500">
+                  這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）這是簡短內容（100個字）...
+                </div>
+                <div class="text-gray-500 text-sm">部門：人事、瀏覽：159次</div>
+              </div>
+            </div>
+
+            <div class="h-12 w-full flex justify-end items-end">
+              <a href="#" class="flex mr-3 text-blue-500">
+                <svg
+                  class="w-5 h-5 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+                更多消息...
+              </a>
+            </div>
+          </div>
+          <!-- 左欄B -->
+        </div>
+      </div>
+      <!-- 最新消息B -->
+      <!-- 頁尾T -->
+      <footer class="bg-blue-50 text-gray-500 text-lg">
+        <div class="flex px-40 py-20">
+          <div class="basis-4/12">
+            <a href="#" class="flex items-center">
+              <svg
+                class="w-16 h-20 text-red-600 bg-blue-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                <path
+                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                ></path>
+              </svg>
+            </a>
+            <div class="mt-10 pr-28">
+              我們的專業涵蓋心理、資訊、廣播與藝術等各項領域，隨著國際技術及趨勢成長，我們也日益茁壯，歡迎各單位參訪與交流，誠摯歡迎。
+            </div>
+          </div>
+          <div class="basis-2/12 flex flex-col items-start gap-4">
+            <div class="font-bold text-gray-600">大隊介紹</div>
+            <a href="" class="hover:text-gray-900 hover:font-bold">隊徽/隊歌</a>
+            <a href="" class="hover:text-gray-900 hover:font-bold"> 陽明樓 </a>
+            <a href="" class="hover:text-gray-900 hover:font-bold"> 大隊長 </a>
+            <a href="" class="hover:text-gray-900 hover:font-bold"> 隊史 </a>
+            <a href="" class="hover:text-gray-900 hover:font-bold"> 任務 </a>
+          </div>
+          <div class="basis-2/12 flex flex-col items-start gap-4">
+            <div class="font-bold text-gray-600">各中隊</div>
+            <a href="" class="hover:text-gray-900 hover:font-bold">
+              第一中隊
+            </a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">
+              第二中隊
+            </a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">
+              第三中隊
+            </a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">
+              第四中隊
+            </a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">
+              第五中隊
+            </a>
+          </div>
+          <div class="basis-2/12 flex flex-col items-start gap-4">
+            <div class="font-bold text-gray-600">最新消息</div>
+            <a href="" class="hover:text-gray-900 hover:font-bold">士督長</a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">人事</a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">作戰</a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">情報</a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">通資</a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">保防</a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">監察</a>
+          </div>
+          <div class="basis-2/12 flex flex-col items-start gap-4">
+            <div class="font-bold text-gray-600">其他</div>
+            <a href="" class="hover:text-gray-900 hover:font-bold">招募專區</a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">下載專區</a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">大隊長 </a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">隊史</a>
+            <a href="" class="hover:text-gray-900 hover:font-bold">任務</a>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200" />
+        <div class="flex flex-col items-center pb-20">
+          <div>©2022 心理作戰大隊 版權所有</div>
+          <div>Copyright ©2022 Political Warfare Group</div>
+        </div>
+      </footer>
+      <!-- 頁尾B -->
+    </div>
+  </body>
+</html>
+
+<style scoped>
+  .fiveBoxSize {
+    /* min-width: 614px; */
+    min-width: 33.4%;
+    min-height: 410px;
+  }
+  .text-shadow {
+    text-shadow: black 0.1em 0.1em 0.2em;
+    word-break: break-all;
+  }
+</style>
